@@ -1,0 +1,20 @@
+--- a/TauSpinner/include/TauSpinner/Particle.h
++++ b/TauSpinner/include/TauSpinner/Particle.h
+@@ -77,2 +77,3 @@
+ inline double Particle::getAnglePhi()
+ {
++  if (px()==0.0 && py()==0.0) return 0.0;
+@@ -96,2 +97,3 @@
+ inline double Particle::getAngleTheta()
+ {
++  if (px()==0.0 && pz()==0.0) return 0.0;
+--- a/include/TauSpinner/Particle.h
++++ b/include/TauSpinner/Particle.h
+@@ -77,2 +77,3 @@
+ inline double Particle::getAnglePhi()
+ {
++  if (px()==0.0 && py()==0.0) return 0.0;
+@@ -96,2 +97,3 @@
+ inline double Particle::getAngleTheta()
+ {
++  if (px()==0.0 && pz()==0.0) return 0.0;

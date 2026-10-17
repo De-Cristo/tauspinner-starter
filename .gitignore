@@ -1,0 +1,6 @@
+build/
+deps/
+outputs/
+__pycache__/
+*.pyc
+core*
